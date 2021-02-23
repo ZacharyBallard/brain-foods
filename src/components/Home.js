@@ -1,4 +1,5 @@
 import React from 'react';
+import HomeCarousel from './HomeCarousel';
 
 
 class Home extends React.Component{
@@ -8,7 +9,8 @@ class Home extends React.Component{
     render(){
         return(
             <div>
-                This is the Home Page
+                <h1>Welcome to a better way of eating!</h1>
+                <HomeCarousel/>
             </div>
         )
     }
