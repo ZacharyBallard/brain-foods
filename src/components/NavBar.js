@@ -6,13 +6,8 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
 } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,21 +17,21 @@ const NavBar = (props) => {
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">🧠git a</NavbarBrand>
+        <NavbarBrand href="/">🧠</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="">Brain Foods?</NavLink>
+              <NavLink className="nav-link" to="/BrainFoods">Brain Foods?</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="">Food Bank</NavLink>
+              <NavLink className="nav-link" to="/FoodBank">Food Bank</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="">Menu</NavLink>
+              <NavLink className="nav-link" to="/Menu">Menu</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="">Grocery List</NavLink>
+              <NavLink className="nav-link" to="/GroceryList">Grocery List</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
