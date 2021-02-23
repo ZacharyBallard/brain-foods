@@ -8,8 +8,13 @@ import Menu from './Menu';
 import GroceryList from './GroceryList';
 import Footer from './Footer';
 import { Switch, Route, Redirect, withRouter} from 'react-router-dom';
+import { connect } from 'react-redux';
 
-
+const mapStateToProps = state => {
+    return{
+        meals: state.meals
+    }
+}
 
 
 class Main extends Component {
@@ -37,4 +42,4 @@ class Main extends Component {
 }
 
 
-export default Main;
+export default withRouter(connect(mapStateToProps)(Main));

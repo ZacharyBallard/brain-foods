@@ -1,4 +1,4 @@
-export const meals = [
+const meals = [
     {
         id: 0,
         name: 'Beef & Broccoli',
@@ -10,3 +10,5 @@ export const meals = [
     
     }
 ]
+
+export default meals;
