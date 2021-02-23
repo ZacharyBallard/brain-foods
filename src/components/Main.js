@@ -6,6 +6,7 @@ import BrainFoods from './BrainFoods';
 import FoodBank from './FoodBank';
 import Menu from './Menu';
 import GroceryList from './GroceryList';
+import Footer from './Footer';
 import { Switch, Route, Redirect, withRouter} from 'react-router-dom';
 
 
@@ -29,6 +30,7 @@ class Main extends Component {
                     <Route path='/GroceryList' component={GroceryList}/>
                     <Redirect to='/' />
                 </Switch>
+                <Footer/>
             </div>
         )
     }
