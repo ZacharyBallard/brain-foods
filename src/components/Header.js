@@ -8,6 +8,9 @@ const Header = (props) => {
         <Container fluid>
           <h1 className="display-3">Brain Foods</h1>
           <p className="lead">a better way to eat</p>
+          {/* <img src={props.meals[0].image}/>
+          <p>{props.meals[0].name}</p>
+          <p>{props.meals[0].description}</p> */}
         </Container>
       </Jumbotron>
     </div>

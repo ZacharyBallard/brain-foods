@@ -18,14 +18,11 @@ const mapStateToProps = state => {
 
 
 class Main extends Component {
-    constructor(props){
-        super(props)
-    }
     
     render(){
         return(
             <div>
-                <Header/>
+                <Header meals={this.props.meals}/>
                 <NavBar/>
                 <Switch>
                     <Route exact path='/' component={Home}/>
