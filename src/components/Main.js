@@ -27,7 +27,7 @@ class Main extends Component {
                 <Switch>
                     <Route exact path='/' component={Home}/>
                     <Route path='/BrainFoods' component={BrainFoods}/>
-                    <Route path='/FoodBank' component={FoodBank}/>
+                    <Route path='/FoodBank' render={() => <FoodBank meals={this.props.meals}/>}/>
                     <Route path='/Menu' component={Menu}/>
                     <Route path='/GroceryList' component={GroceryList}/>
                     <Redirect to='/' />

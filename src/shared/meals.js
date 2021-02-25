@@ -84,7 +84,7 @@ const meals = [
     {
         id: 3,
         name: 'Slow Cooker Blueberry Slump',
-        image: '/assests/images /blueberrySlump.jpeg',
+        image: '/assests/images/blueberrySlump.jpeg',
         almond: false,
         avocado:false,
         beef: false,
