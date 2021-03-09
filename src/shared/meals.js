@@ -2,7 +2,7 @@ const meals = [
     {
         id: 0,
         name: 'Beef & Broccoli',
-        image: 'assests/images/beefAndBroccoli.png',
+        image: 'assets/images/beefAndBroccoli.png',
         almond: false,
         avocado:false,
         beef: true,
@@ -17,7 +17,7 @@ const meals = [
         directions: [
             'Season the beef with white pepper.',
             'In a small bowl, whisk together the soy sauce, brown sugar, garlic, ginger, and cornstarch, if using. Set aside.',
-            'In a large nonstick skillet over high hear, warm 1/2 tablespoom of the seasme oil until just smoking. Add the beef and cook, stirring occasionally, until the meat is just about cooked through. Transfer to a plate and set aside.',
+            'In a large nonstick skillet over high hear, warm 1/2 tablespoon of the sesame oil until just smoking. Add the beef and cook, stirring occasionally, until the meat is just about cooked through. Transfer to a plate and set aside.',
             'Add the remaining 1/2 tablespoon of oil to the skillet, then add the onions and cook until they are softened, about 8 minutes.',
             'Add the blanched and drained broccoli and cook for 1 minute. Then add the reserved sauce and stir to coat.',
             'Return the beef to the skillet and continue to cook until the beef is cooked through and the sauce has reduced slightly, about 3 minutes more.',
@@ -35,7 +35,7 @@ const meals = [
             '1/2 yellow onion, sliced',
             '1 large head of broccoli, cut into florets and blanched',
             'cooked rice or cauliflower rice',
-            '1 tablesppon toasted sesame seeds',
+            '1 tablespoon toasted sesame seeds',
             '3 scallions, sliced on the bias'
         ]
     
@@ -84,7 +84,7 @@ const meals = [
     {
         id: 3,
         name: 'Slow Cooker Blueberry Slump',
-        image: '/assests/images/blueberrySlump.jpeg',
+        image: '/assets/images/blueberrySlump.jpeg',
         almond: false,
         avocado:false,
         beef: false,

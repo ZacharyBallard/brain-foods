@@ -9,11 +9,16 @@ import GroceryList from './GroceryList';
 import Footer from './Footer';
 import { Switch, Route, Redirect, withRouter} from 'react-router-dom';
 import { connect } from 'react-redux';
+import { addMeal } from '../redux/ActionCreators';
 
 const mapStateToProps = state => {
     return{
         meals: state.meals
     }
+}
+
+const mapDispatchToProps = {
+    addMeal:(values) => addMeal(values)
 }
 
 
@@ -27,7 +32,7 @@ class Main extends Component {
                 <Switch>
                     <Route exact path='/' component={Home}/>
                     <Route path='/BrainFoods' component={BrainFoods}/>
-                    <Route path='/FoodBank' render={() => <FoodBank meals={this.props.meals}/>}/>
+                    <Route path='/FoodBank' render={() => <FoodBank addMeal={this.props.addMeal} meals={this.props.meals}/>}/>
                     <Route path='/Menu' component={Menu}/>
                     <Route path='/GroceryList' component={GroceryList}/>
                     <Redirect to='/' />
@@ -39,4 +44,4 @@ class Main extends Component {
 }
 
 
-export default withRouter(connect(mapStateToProps)(Main));
+export default withRouter(connect(mapStateToProps,mapDispatchToProps)(Main));
