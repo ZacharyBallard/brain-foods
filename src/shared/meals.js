@@ -2,7 +2,7 @@ const meals = [
     {
         id: 0,
         name: 'Beef & Broccoli',
-        image: 'assets/images/beefAndBroccoli.png',
+        image: './components/images/beefAndBroccoli.jpeg',
         almond: false,
         avocado:false,
         beef: true,

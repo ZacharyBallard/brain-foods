@@ -30,9 +30,6 @@ const NavBar = (props) => {
             <NavItem>
               <NavLink className="nav-link" to="/Menu">Menu</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink className="nav-link" to="/GroceryList">Grocery List</NavLink>
-            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>

@@ -37,7 +37,7 @@ import {
     render(){
         return(
             <>
-            <Button onClick={this.toggleModal} outline><i className="fa fa-pencil"></i>New Meal</Button>
+            <Button style={{margin: '20px',}} onClick={this.toggleModal} outline><i className="fa fa-pencil"></i>New Meal</Button>
             <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>  
                 <ModalHeader toggle={this.toggleModal}>Submit New Meal</ModalHeader>
                 <ModalBody toggle={this.toggleModal}>
@@ -166,11 +166,10 @@ import {
 
 
 function FoodBankList(props){
-    console.dir(props.meals);
     const foodList = props.meals.map
     (item => {
         return (
-        <Col className="d-flex align-items-stretch" md="4">
+        <Col style={{margin: '20px'}} className="d-flex align-items-stretch" md="4">
             <Card key={item.id}>
                 <CardImg top width="100%" src={item.image} alt={item.name}/>
                 <CardBody>
