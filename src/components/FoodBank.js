@@ -31,7 +31,8 @@ import {
 
     handleSubmit(values) {
         this.toggleModal();
-        this.props.addMeal(values);
+        this.props.postMeal(values.name, values.almonds, values.avocado, values.beef, values.blueberries, values.darkChocolate, values.darkLeafyGreens, values.eggs, values.extraVirginOliveOil, values.salmon, values.description, values.directions);
+        
     }
 
     render(){
@@ -42,24 +43,13 @@ import {
                 <ModalHeader toggle={this.toggleModal}>Submit New Meal</ModalHeader>
                 <ModalBody toggle={this.toggleModal}>
                     <LocalForm onSubmit={values => this.handleSubmit(values)}>
-                    {/* User Rating */}
-                        <div className="form-group">
-                            <Label htmlFor="rating">Rating:</Label>
-                            <Control.select className="form-control" model=".rating" id="rating" name="rating">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </Control.select>
-                        </div>
                     {/* Meal Name */}
                         <div className="form-group">
-                            <Label htmlFor="title">Meal Name:</Label>
+                            <Label htmlFor="name">Meal Name:</Label>
                             <Control.text 
                             className="form-control"
-                            model=".title" 
-                            id="title" 
+                            model=".name" 
+                            id="name" 
                             placeholder="What is it called?"
                             validators={{
                                 required,
@@ -197,8 +187,8 @@ class FoodBank extends React.Component{
     render(){
         return(
             <div>
-                <MealForm addMeal={this.props.addMeal}/>
-               <FoodBankList meals={this.props.meals}/>
+                <MealForm postMeal={this.props.postMeal}/>
+                <FoodBankList meals={this.props.meals}/>
             </div>
         )
     }
