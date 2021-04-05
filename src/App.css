@@ -5,10 +5,15 @@
 footer {
   margin-top: 30px;
   width: 100%;
-  background-color: #333;
-  color:#fff;
+  background-color: rgb(110, 5, 151);
+  color: #fff;
 }
 
-#headerJumbo{
+#headerJumbo {
   margin-bottom: 0;
+  background-color: rgb(110, 5, 151);
+  color: white;
+}
+#navBar {
+  background-color: rgb(174, 94, 190);
 }

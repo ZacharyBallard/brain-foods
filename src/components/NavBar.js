@@ -16,19 +16,19 @@ const NavBar = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
+      <Navbar id="navBar" light expand="md">
         <NavbarBrand href="/">🧠</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink className="nav-link" to="/BrainFoods">Brain Foods?</NavLink>
+              <NavLink style={{color: 'white'}}  className="nav nav-link" to="/BrainFoods">Brain Foods?</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link" to="/FoodBank">Food Bank</NavLink>
+              <NavLink style={{color: 'white'}}  className="nav nav-link" to="/FoodBank">Food Bank</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link" to="/Menu">Menu</NavLink>
+              <NavLink style={{color: 'white'}} className="nav nav-link" to="/Menu">Menu</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

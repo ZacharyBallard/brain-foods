@@ -8,7 +8,7 @@ class Home extends React.Component{
 
     render(){
         return(
-            <div>
+            <div style={{marginTop: '20px'}}>
                 <h1>Welcome to a better way of eating!</h1>
                 <HomeCarousel/>
             </div>

@@ -27,7 +27,7 @@ class Main extends Component {
     
     render(){
         return(
-            <div>
+            <div id="main">
                 <Header meals={this.props.meals}/>
                 <NavBar/>
                 <Switch>
